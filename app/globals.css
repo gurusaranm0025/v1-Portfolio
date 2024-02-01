@@ -2,32 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* font classes */
+.anonymous-pro-reg {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.anonymous-pro-reg-i {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.anonymous-pro-bold {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.anonymous-pro-bold-i {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.nunito-reg {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.nunito-md {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.nunito-sb {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.nunito-bold {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.rubik-reg {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.rubik-md {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: medium;
+}
+
+.rubik-sb {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.rubik-bold {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* html, body, element styles */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-image: url('./../public/Blur/blur-back.jpg');
+    /* background-size: 100%; */
+    background-position: center bottom;
+    backdrop-filter: brightness(110%);
+    background-repeat: no-repeat;
+    background-attachment: fixed
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* custom classes */
+.navbar {
+    @apply h-[75px] relative;
+}
+
+.h-cover {
+    @apply h-[calc(100vh-75px)];
 }
