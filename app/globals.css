@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "@flaticon/flaticon-uicons/css/all/all";
 
 /* font classes */
 .anonymous-pro-reg {
@@ -95,6 +96,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
