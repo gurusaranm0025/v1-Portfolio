@@ -96,21 +96,22 @@ body {
     height: 100%;
     width: 100%;
     margin: 0;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     background-image: url('./../public/Blur/blur-back.jpg');
-    /* background-size: 100%; */
     background-position: center bottom;
-    backdrop-filter: brightness(110%);
     background-repeat: no-repeat;
     background-attachment: fixed
 }
 
 /* custom classes */
 .navbar {
-    @apply h-[75px] relative;
+    @apply h-[75px] mr-24 relative;
 }
 
 .h-cover {

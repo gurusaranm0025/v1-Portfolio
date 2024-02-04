@@ -4,25 +4,31 @@ import sdMLImg from "@/public/sd-ml.png";
 
 export const projectsArr = [
   {
-    imgSrc: keepCloneImg,
+    imgSrc: "https://bloom-blogging.web.app/keep-clone.png",
+    secondSrc: keepCloneImg,
     title: "Keep Clone",
     des: "A simple note taking or notes app, I just ended up naming it Keep clone!!",
+    gitLink: "https://github.com/gurusaranm0025/keep-clone-nextjs",
     projLink: "https://keep-clone-next.onrender.com/",
     skills: ["React.JS", "TailwindCSS", "PostgresSQL", "Prisma"],
   },
   {
-    imgSrc: bloomBlogImg,
+    imgSrc: "https://bloom-blogging.web.app/bloom-blog.png",
+    secondSrc: bloomBlogImg,
     title: "Bloom - Blogging Platform",
     des: "A blogging which I started working on to learn TailwindCSS and ended up finishing it as full-fledged web app ",
+    gitLink: "https://github.com/gurusaranm0025/bloom-blogging",
     projLink: "https://bloom-blogging.onrender.com/",
     skills: ["Next.JS", "TailwindCSS", "MongoDB", "React.JS"],
   },
   {
-    imgSrc: sdMLImg,
+    imgSrc: "https://bloom-blogging.web.app/sd-ml.png",
+    secondSrc: sdMLImg,
     title: "Symptom Diagnoser",
     des: "It uses a simple ML(Machine Learning) model which gets disease symptoms as inputs and predicts the disease. ML model is trained to predict 43 diseases and trained using dataset with 4000+ observations. ",
+    gitLink: "https://github.com/gurusaranm0025/symptom-diagnoser",
     projLink: "",
-    skills: ["NodeJS", "EJS", "CSS", "Python", "Express.js", "Flask"],
+    skills: ["EJS", "CSS", "Python", "Express.js", "Flask"],
   },
 ];
 

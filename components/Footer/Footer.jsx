@@ -12,29 +12,25 @@ function Footer() {
 
   return (
     <div className="w-full grid grid-cols-2">
-      <p className="top-0 left-1 text-2xl leading-10 ml-10 text-raisin-black tracking-tighter anonymous-pro-bold inline-block min-w-[25ch]">
-        Designed and Developed <br /> by Guru Saran M, 2024
+      <p className="top-0 left-1 text-2xl max-md:text-lg leading-10 ml-3 md:ml-10 text-raisin-black tracking-tighter anonymous-pro-reg inline-block min-w-[25ch]">
+        Designed and Developed by <br /> Guru Saran M, 2024
       </p>
 
-      <div className="h-full w-full flex justify-end items-center gap-12 pr-8">
+      <div className="h-full w-full flex justify-end items-center gap-12 max-md:gap-4 pr-8">
         {Object.keys(links).map((key, i) => {
           return (
-            <>
-              <div key={i}>
-                <Link
-                  href={links[key][0]}
-                  target="_blank"
-                  className="text-xl text-raisin-black rubik-md tracking-tight leading-8 hover:text-majorelle-blue md:hover:underline duration-500"
-                >
-                  <span className="max-md:hidden">{key}</span>
-                  <i
-                    className={`${links[key][1]} text-2xl duration-500 md:hidden`}
-                  ></i>
-                </Link>
-
-                {/* <div className="md:hidden duration-500 text-raisin-black hover:text-majorelle-blue"></div> */}
-              </div>
-            </>
+            <div key={i}>
+              <Link
+                href={links[key][0]}
+                target="_blank"
+                className="text-xl max-md:text-lg text-raisin-black rubik-reg tracking-normal leading-8 md:hover:text-majorelle-blue md:hover:underline duration-300 max-md:text-majorelle-blue"
+              >
+                <span className="max-md:hidden">{key}</span>
+                <i
+                  className={`${links[key][1]} text-2xl max-md:text-xl duration-500 md:hidden`}
+                ></i>
+              </Link>
+            </div>
           );
         })}
       </div>
