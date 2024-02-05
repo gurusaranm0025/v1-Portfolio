@@ -4,7 +4,7 @@ import sdMLImg from "@/public/sd-ml.png";
 
 export const projectsArr = [
   {
-    imgSrc: "https://bloom-blogging.web.app/keep-clone.png",
+    imgSrc: "https://portfolio-v1-635ea.web.app/keep-clone.png",
     secondSrc: keepCloneImg,
     title: "Keep Clone",
     des: "A simple note taking or notes app, I just ended up naming it Keep clone!!",
@@ -13,7 +13,7 @@ export const projectsArr = [
     skills: ["React.JS", "TailwindCSS", "PostgresSQL", "Prisma"],
   },
   {
-    imgSrc: "https://bloom-blogging.web.app/bloom-blog.png",
+    imgSrc: "https://portfolio-v1-635ea.web.app/bloom-blog.png",
     secondSrc: bloomBlogImg,
     title: "Bloom - Blogging Platform",
     des: "A blogging which I started working on to learn TailwindCSS and ended up finishing it as full-fledged web app ",
@@ -22,7 +22,7 @@ export const projectsArr = [
     skills: ["Next.JS", "TailwindCSS", "MongoDB", "React.JS"],
   },
   {
-    imgSrc: "https://bloom-blogging.web.app/sd-ml.png",
+    imgSrc: "https://portfolio-v1-635ea.web.app/sd-ml.png",
     secondSrc: sdMLImg,
     title: "Symptom Diagnoser",
     des: "It uses a simple ML(Machine Learning) model which gets disease symptoms as inputs and predicts the disease. ML model is trained to predict 43 diseases and trained using dataset with 4000+ observations. ",
