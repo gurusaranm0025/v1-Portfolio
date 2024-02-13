@@ -1,6 +1,7 @@
 import keepCloneImg from "@/public/keep-clone.png";
 import bloomBlogImg from "@/public/bloom-blog.png";
 import sdMLImg from "@/public/sd-ml.png";
+import v1PortImg from "@/public/v1p.png";
 
 export const projectsArr = [
   {
@@ -27,9 +28,18 @@ export const projectsArr = [
     title: "Symptom Diagnoser",
     des: "It uses a simple ML(Machine Learning) model which gets disease symptoms as inputs and predicts the disease. ML model is trained to predict 43 diseases and trained using dataset with 4000+ observations. ",
     gitLink: "https://github.com/gurusaranm0025/symptom-diagnoser",
-    projLink: "",
+    projLink: undefined,
     skills: ["EJS", "CSS", "Python", "Express.js", "Flask"],
   },
+  {
+    imgSrc: "https://portfolio-v1-635ea.web.app/v1p.png",
+    secondSrc: v1PortImg,
+    title: "My Portfolio Site",
+    des: "It's mt first portfolio website, where you can find about my projects and skills.",
+    gitLink: "https://github.com/gurusaranm0025/v1-Portfolio",
+    projLink: "https://portfolio-v1-635ea.web.app/",
+    skills: ["Next.JS", "TailwindCSS", "React.JS"]
+  }
 ];
 
 export const languagesAndSkills = [

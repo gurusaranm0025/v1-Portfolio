@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className="h-cover ml-7 md:ml-10 lg:ml-20 flex items-center relative">
       <div className="max-h-[600px] h-full">
-        <p className="text-5xl max-md:text-3xl my-3 anonymous-pro-bold tracking-wider text-majorelle-blue max-lg:tracking-tighter">
+        <p className="text-5xl max-md:text-3xl my-3 anonymous-pro-bold tracking-wider text-majorelle-blue max-lg:tracking-wider">
           Hi,
         </p>
         <p className="text-6xl max-md:text-4xl max-lg:tracking-tighter text-raisin-black my-3 anonymous-pro-bold">
@@ -15,7 +15,7 @@ function Hero() {
           real-world projects and expand my skill-set
         </p>
 
-        <div className="group mt-[80px] lg:mt-[200px] p-1 md:p-5 outline-none md:hover:outline-snow md:hover:backdrop-brightness-125 rounded-lg duration-500">
+        <div className="group mt-[80px] lg:mt-[200px] p-1 md:p-5 outline-none md:hover:outline-majorelle-blue md:hover:backdrop-brightness-125 rounded-lg duration-500">
           <p className="group-hover:text-majorelle-blue rubik-md text-3xl max-md:text-2xl text-raisin-black tracking-tight duration-300 max-lg:tracking-tighter max-md:text-majorelle-blue">
             A little bit about me...
           </p>

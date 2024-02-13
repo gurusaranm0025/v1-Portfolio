@@ -6,16 +6,16 @@ function Projects() {
     <div className="md:mt-24 h-full flex-col">
       {projectsArr.map((project, i) => {
         return (
-          <Link
+          <div
             key={i}
-            href={project.gitLink}
-            target="_blank"
+            // href={project.gitLink}
+            // target="_blank"
             className="group lg:max-h-[550px] p-8 md:p-16 h-full flex max-lg:flex-col gap-7 hover:backdrop-brightness-125 rounded-2xl outline-none outline-snow/50 hover:outline-majorelle-blue duration-500 mt-5 max-md:outline-majorelle-blue"
           >
             <div className="max-lg:w-full max-lg:flex max-lg:justify-center">
               <img
                 src={`${project.imgSrc || project.secondSrc}`}
-                className="rounded-xl bg-viridian/10 shadow-xl shadow-raisin-black/30 group-hover:shadow-raisin-black/80 duration-500 outline-none outline-snow group-hover:outline-majorelle-blue lg:max-h-[300px] lg:max-w-[500px] aspect-video md:max-w-[450px] max-md:outline-majorelle-blue"
+                className="rounded-xl bg-viridian/10 shadow-xl shadow-raisin-black/30 group-hover:shadow-raisin-black/80 duration-500 outline-none outline-snow group-hover:outline-majorelle-blue lg:max-h-[250px] lg:max-w-[450px] aspect-video md:max-w-[450px] max-md:outline-majorelle-blue"
                 alt="Reference image"
               />
             </div>
@@ -38,8 +38,22 @@ function Projects() {
                   );
                 })}
               </div>
+              <div className="mt-8 flex gap-5">
+
+                {
+                  project.projLink ?
+                    <Link href={project.projLink} target="_blank" className="mt-10 px-5 py-2 bg-snow/50 outline-none outline-snow/50 group-hover:outline-majorelle-blue rounded-md text-lg rubik-reg tracking-wider hover:bg-majorelle-blue/30 max-md:outline-majorelle-blue max-md:bg-majorelle-blue/30 duration-500 text-raisin-black max-md:flex-1 text-center max-md:group-hover:hover:bg-majorelle-blue/20">
+                      View Hosted Project
+                    </Link> : ""
+                }
+
+                <Link href={project.gitLink} target="_blank" className="mt-10 px-5 py-2 bg-snow/50 outline-none outline-snow/50 group-hover:outline-majorelle-blue rounded-md text-lg rubik-reg tracking-wider hover:bg-majorelle-blue/30 max-md:outline-majorelle-blue max-md:bg-majorelle-blue/30 duration-500 text-raisin-black max-md:flex-1 text-center max-md:group-hover:hover:bg-majorelle-blue/20">
+                  GitHub Repo
+                </Link>
+
+              </div>
             </div>
-          </Link>
+          </div>
         );
       })}
 
@@ -50,9 +64,9 @@ function Projects() {
         target="_blank"
         className="my-10 w-full flex justify-center"
       >
-        <span className="px-5 py-3 my-2 text-2xl max-md:text-xl nunito-reg tracking-tight bg-snow/80 outline-none outline-snow/90 rounded-xl hover:outline-majorelle-blue/90 hover:bg-majorelle-blue/30 duration-500 hover:backdrop-brightness-125 hover:shadow-2xl shadow-viridian cursor-pointer text-raisin-black max-lg:bg-majorelle-blue/30 max-lg:outline-majorelle-blue/90">
+        <button className="px-5 py-3 my-2 text-2xl max-md:text-xl nunito-reg tracking-tight bg-snow/80 outline-none outline-snow/90 rounded-xl hover:outline-majorelle-blue/90 hover:bg-majorelle-blue/30 duration-500 hover:backdrop-brightness-125 hover:shadow-2xl shadow-viridian cursor-pointer text-raisin-black max-lg:bg-majorelle-blue/30 max-lg:outline-majorelle-blue/90">
           Check Out My Resume
-        </span>
+        </button>
       </Link>
     </div>
   );
