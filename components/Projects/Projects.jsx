@@ -43,7 +43,7 @@ function Projects() {
                 {
                   project.projLink ?
                     <Link href={project.projLink} target="_blank" className="mt-10 px-5 py-2 bg-snow/50 outline-none outline-snow/50 group-hover:outline-majorelle-blue rounded-md text-lg rubik-reg tracking-wider hover:bg-majorelle-blue/30 max-md:outline-majorelle-blue max-md:bg-majorelle-blue/30 duration-500 text-raisin-black max-md:flex-1 text-center max-md:group-hover:hover:bg-majorelle-blue/20">
-                      View Hosted Project
+                      Visit Project
                     </Link> : ""
                 }
 
