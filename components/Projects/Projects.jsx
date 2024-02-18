@@ -59,7 +59,7 @@ function Projects() {
 
       <Link
         href={
-          "https://drive.google.com/file/d/17ISOi93aio60oOTDQlNgcs0Iz-af0xA0/view?usp=sharing"
+          "https://drive.google.com/file/d/1TF6OGqVj9Cj3yF4cFu3Lr-fd6EFOQXG_/view?usp=sharing"
         }
         target="_blank"
         className="my-10 w-full flex justify-center"
