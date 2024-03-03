@@ -58,9 +58,7 @@ function Projects() {
       })}
 
       <Link
-        href={
-          "https://drive.google.com/file/d/1TF6OGqVj9Cj3yF4cFu3Lr-fd6EFOQXG_/view?usp=sharing"
-        }
+        href={"https://drive.google.com/file/d/1t3KI22KRtHOKSOsyj6pYj6Q7Vxrj1rsX/view?usp=sharing"}
         target="_blank"
         className="my-10 w-full flex justify-center"
       >
